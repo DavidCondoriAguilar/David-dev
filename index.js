@@ -3,7 +3,7 @@
 
 
 var typed = new Typed('.type', {
-    strings: ['Designer&#127912;','Developer&#128187;','Freelancer&#x1F3F9;'],
+    strings: ['Developer&#128187;','Designer&#128736;','Freelancer&#10166;'],
     typeSpeed:150,
     backSpeed:150,
     loop: true

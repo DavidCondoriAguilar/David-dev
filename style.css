@@ -105,7 +105,7 @@ p {
 }
 
 .back {
-    background-image: url(/image/cxz.jpg);
+    background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

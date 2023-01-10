@@ -9,4 +9,5 @@ var typed = new Typed('.type', {
     loop: true
 });
 
-
+var sound = new Audio();
+sound.src="image\mario-bros tuberia.mp3"

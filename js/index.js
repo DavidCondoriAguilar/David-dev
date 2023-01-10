@@ -10,4 +10,4 @@ var typed = new Typed('.type', {
 });
 
 var sound = new Audio();
-sound.src="image\mario-bros tuberia.mp3"
+sound.src="mario-bros tuberia.mp3"

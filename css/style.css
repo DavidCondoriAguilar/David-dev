@@ -175,7 +175,9 @@ p {
     transition: 0.9s;
 }
 
-
+.hiddin {
+    overflow: auto;
+}
 .img-circle {
     width: 90px;
     border-radius: 50%;
@@ -199,9 +201,7 @@ p {
 #this-sht {
     background: rgb(236, 236, 236);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
     height: auto;
-
 }
 
 #this-sht-two {
@@ -415,8 +415,8 @@ p {
 
     #moo {
         position: relative;
-        top: 3rem;
-        right: 80px;
+        top: 2rem;
+        right: 10px;
     }
 
     #this-sht-two {
@@ -483,6 +483,18 @@ p {
         z-index: 100;
         bottom: 3.7rem;
     }
+
+    .hehy {
+        margin: -11px;
+    }
+
+    .back {
+        background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:450px 100%;
+    background-position: center;
+    }
     
 
 }
@@ -500,6 +512,20 @@ p {
     .third-section {
         height: auto;
         background-color: #16191f;
+    }
+    #this-sht {
+        padding: 0;
+    }
+    
+    .back {
+        background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:850px 100%;
+    background-position: center;
+    }
+    .hehy {
+        margin-top: 2rem;
     }
 }
 

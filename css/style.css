@@ -178,6 +178,7 @@ p {
 .hiddin {
     overflow: auto;
 }
+
 .img-circle {
     width: 90px;
     border-radius: 50%;
@@ -293,13 +294,14 @@ p {
 
 
 #whatsapp-button {
-    
+
     margin-bottom: 30px;
     position: fixed;
     right: 10px;
     bottom: 5rem;
     z-index: 100;
 }
+
 .spinner {
     width: 35px;
     height: 27px;
@@ -360,6 +362,7 @@ p {
         transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
     }
 }
+
 /* ADAPTABLE- @MEDIA */
 @media screen and (max-width:767px) {
     .type {
@@ -431,6 +434,7 @@ p {
         bottom: 90px;
         z-index: 100;
     }
+
     #top-button {
         position: fixed;
         right: 2px;
@@ -446,7 +450,7 @@ p {
         background-color: rgba(0, 0, 0, 0.2);
         position: relative;
     }
-    
+
     .loader::before {
         content: "";
         position: absolute;
@@ -457,22 +461,22 @@ p {
         height: 100%;
         border-radius: 30px;
         animation: moving 1s ease-in-out infinite;
-        
+
 
     }
-    
+
     @keyframes moving {
         50% {
             width: 100%;
         }
-    
+
         100% {
             width: 0;
             right: 0;
             left: unset;
         }
     }
-    
+
     .spinner {
         width: 23px;
         height: 17px;
@@ -490,12 +494,12 @@ p {
 
     .back {
         background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:450px 100%;
-    background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 450px 100%;
+        background-position: center;
     }
-    
+
 
 }
 
@@ -513,17 +517,19 @@ p {
         height: auto;
         background-color: #16191f;
     }
+
     #this-sht {
         padding: 0;
     }
-    
+
     .back {
         background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:850px 100%;
-    background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 850px 100%;
+        background-position: center;
     }
+
     .hehy {
         margin-top: 2rem;
     }
@@ -565,6 +571,3 @@ p {
         left: unset;
     }
 }
-
-
-

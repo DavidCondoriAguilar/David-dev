@@ -114,6 +114,11 @@ p {
 
 }
 
+.work {
+    height: 100vh;
+    background: red;
+}
+
 .first-button {
     --green: #3260dfb2;
     font-size: 17px;
@@ -506,7 +511,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .first-section {
-        height: auto;
+        height: 100VH;
     }
 
     .second-section {

@@ -369,6 +369,110 @@ p {
     }
 }
 
+#road-too {
+    height: auto;
+    background-color: #f0f2f5;
+}
+
+#road-too h2 {
+    color: #0660c0;
+}
+
+.work-1 {
+    filter: grayscale(90%);
+}
+
+.work-2 {
+    filter: grayscale(90%);
+}
+
+.work-3 {
+    filter: grayscale(90%);
+}
+
+.work-4 {
+    filter: grayscale(90%);
+}
+
+.work-1:hover {
+    filter: grayscale(1%);
+    transition: all 0.7s ease-in-out;
+    transform: scale(0.9);
+}
+.work-2:hover {
+    filter: grayscale(1%);
+    transition: all 0.7s ease-in-out;
+    transform: scale(0.9);
+
+}
+.work-3:hover {
+    filter: grayscale(1%);
+    transition: all 0.7s ease-in-out;
+    transform: scale(0.9);
+
+}
+.work-4:hover {
+    filter: grayscale(1%);
+    transition: all 0.7s ease-in-out;
+    transform: scale(0.9);
+
+}
+
+/* !FORMULARIO */
+#contact {
+    height: auto;
+    background-color: #ecf0f5;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #0077cc;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005ea6;
+  }
 /* ADAPTABLE- @MEDIA */
 @media screen and (max-width:767px) {
     .type {

@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b82695f5b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -49,9 +50,8 @@
                     <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
                         <div class="navbar-nav d-flex justify-content-start">
                             <a class="nav-link" href="#">Home</a>
-                            <!-- <a class="nav-link" href="#about-me">Perfil</a> -->
                             <a class="nav-link" href="#about-me">Skills</a>
-                            <!-- <a class="nav-link" href="#redes">Contacto</a> -->
+                            <a class="nav-link" href="#road-too">Works</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,13 @@
                                         alt="Linkedin">
                                 </a>
                             </div>
-                            <p data-aos="zoom-out-right" data-aos-duration="1500" class="p-second px-2">Soy un Desarrollador Web, tengo 24 años de edad, como gran estudiante y como Desarrollador Web FrontEnd me encantaría poder entrar a formar parte de una empresa en la que pueda aplicar todos mis conocimientos, al mismo tiempo, que me permita desarrollarme profesionalmente aprendiendo día a día. Flexible al cambio e interesado en estar constantemente actualizados en nuevas tecnologías de programación. El autoaprendizaje, el esfuerzo y la curiosidad son algunas de las cosas que me caracterizan. 
+                            <p data-aos="zoom-out-right" data-aos-duration="1500" class="p-second px-2">Soy un
+                                Desarrollador Web, tengo 24 años de edad, como gran estudiante y como Desarrollador Web
+                                FrontEnd me encantaría poder entrar a formar parte de una empresa en la que pueda
+                                aplicar todos mis conocimientos, al mismo tiempo, que me permita desarrollarme
+                                profesionalmente aprendiendo día a día. Flexible al cambio e interesado en estar
+                                constantemente actualizados en nuevas tecnologías de programación. El autoaprendizaje,
+                                el esfuerzo y la curiosidad son algunas de las cosas que me caracterizan.
                             </p>
                         </div>
 
@@ -169,8 +175,6 @@
                                 <img loading="lazy" class="tecnologi py-1" width="80" height="50"
                                     src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sass.svg"
                                     alt="Sass">
-
-
                             </div>
 
                         </div>
@@ -199,7 +203,82 @@
                     </a>
                 </div>
             </div>
+        </article>
 
+        <!-- !WORKS-TO-PORTFOLIO -->
+
+        <article id="road-too">
+            <div class="container py-3">
+                <h2 class="text-center py-5">Works &#x2693;</h2>
+                <div class="row py-3" >
+                    <div data-aos="zoom-out-up" data-aos-duration="1500" class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-1 mx-auto ">
+                        <a 
+                        href="https://camaleon-ecologicoo.netlify.app/" target="_blank">
+                        <img src="/image/bg1.jpg" class="img-fluid rounded" alt="Web-Bolsas Ecológicas">
+                    </a>
+                    </div>
+
+                    <div data-aos="zoom-out-down" data-aos-duration="1500" class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-2 mx-auto">
+                        <a   href="https://artecu.netlify.app/"
+                        target="b
+                    ">
+                        <img src="/image/bg2.jpg" class="img-fluid rounded" alt="Web-Artesania">
+                    </a>
+                    </div>
+
+                    <div data-aos="zoom-out-left" data-aos-duration="1500" class="col-xxl-4 col-md-6 mt-3 col-sm-12 work-3 mx-auto">
+                        <a  
+                        href="https://kawi-barbershoop.netlify.app/" target="_blank">
+                        <img src="/image/bg3.jpg" class="img-fluid rounded" alt="Web-Barber">
+                    </a>
+                    </div>
+
+                    <div data-aos="zoom-out-right" data-aos-duration="1500" class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-4 mx-auto">
+                        <a  
+                        href="https://stunning-douhua-45181d.netlify.app/index.html" target="_blank">
+                        <img src="/image/bg4.jpg" class="img-fluid rounded" alt="Web-Barber">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article id="contact">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-xxl-6 col-md-6 mt-3 col-sm-12 mx-auto" data-aos="zoom-out-right" data-aos-duration="2000">
+                        <h3 style="color: #0660c0;"> ¡Estar en contacto es fácil!</h3>
+                        <p> ¡No seas tímido! Me encanta conocer gente nueva</p>
+                        <p> <i class="bi bi-geo-alt text-primary"></i>  Lima- Perú</p>
+                        <p> <i class="bi bi-phone-vibrate text-primary"></i>  +51 928 193 119</p>
+                        <p> <i class="bi bi-send-plus text-primary"></i>  davidragewild@gmail.com</p>
+                    </div>
+                    
+                    <div class="col-xxl-6 col-md-6 mt-3 col-sm-12 mx-auto" data-aos="zoom-out-right" data-aos-duration="2000">
+                        <form class="contact-form" action="https://formsubmit.co/davidragewild@gmail.com" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" placeholder="Ingrese Nombre" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" placeholder="Ingrese Correo" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Número Celular</label>
+                                <input type="text" placeholder="Ingrese Número" id="number" name="number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" placeholder="Ingrese Mensaje" name="message" rows="4"
+                                    required></textarea>
+                            </div>
+                            <button type="submit">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </article>
 
         <!-- FOOTER -->

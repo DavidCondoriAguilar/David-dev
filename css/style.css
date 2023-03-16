@@ -480,6 +480,10 @@ p {
         font-size: 3rem;
     }
 
+    #homer .container {
+        width: 100%;
+    }
+
     h1 {
         font-size: 4rem;
         font-weight: 700;
@@ -606,7 +610,6 @@ p {
         background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: 450px 100%;
         background-position: center;
     }
 

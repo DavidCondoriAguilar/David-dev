@@ -234,10 +234,17 @@ p {
     display: flex;
     justify-content: start;
 }
+.tecnologi {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all .5s ease-in-out;
+    border-radius: 50%;
 
-.tecnologi:hover {
-    transform: rotate(370deg);
 }
+.tecnologi:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
 
 /* TERCERA SECCION */
 
@@ -372,11 +379,23 @@ p {
 #road-too {
     height: auto;
     background-color: #f0f2f5;
+   
 }
 
+
+#road-too img {
+    box-shadow:0 5px 7px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+}
+
+
+#road-too img:hover {
+box-shadow: 20px 18px 15px rgba(0, 0, 0, 0.2);
+
+}
 #road-too h2 {
     color: #0660c0;
-}
+} 
 
 .work-1 {
     filter: grayscale(90%);
@@ -613,6 +632,12 @@ p {
         background-position: center;
     }
 
+    #contact {
+        height: auto;
+    }
+    .formulario {
+        height: auto;
+    }
 
 }
 

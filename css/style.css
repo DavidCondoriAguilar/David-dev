@@ -211,6 +211,7 @@ p {
     height: auto;
 }
 
+
 #this-sht-two {
     height: auto;
     background-color: #ffffff;
@@ -448,6 +449,8 @@ box-shadow: 20px 18px 15px rgba(0, 0, 0, 0.2);
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
   
   .form-group {
@@ -458,6 +461,7 @@ box-shadow: 20px 18px 15px rgba(0, 0, 0, 0.2);
     display: block;
     font-size: 1.2rem;
     margin-bottom: 5px;
+    font-weight: 600;
   }
   
   input[type="text"],
@@ -494,6 +498,7 @@ box-shadow: 20px 18px 15px rgba(0, 0, 0, 0.2);
   }
 /* ADAPTABLE- @MEDIA */
 @media screen and (max-width:767px) {
+    
     .type {
         color: #0660c0;
         font-size: 3rem;

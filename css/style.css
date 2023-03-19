@@ -669,7 +669,7 @@ box-shadow: 20px 18px 15px rgba(0, 0, 0, 0.2);
         background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: 850px 100%;
+        background-size: cover;
         background-position: center;
     }
 

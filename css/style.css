@@ -174,11 +174,13 @@ p {
 #links {
     font-size: 45px;
     color: #ffffff;
+    transition: transform 0.4s ease;
 }
 
 #links:hover {
     color: #325fdc;
-    transition: 0.9s;
+    transform: translateY(-7px);
+
 }
 
 .hiddin {
@@ -204,6 +206,10 @@ p {
     justify-content: space-around;
     align-content: center;
 }
+.flex-1 h4 {
+    color: #0660c0;
+    font-weight: 800;
+}
 
 #this-sht {
     background: rgb(236, 236, 236);
@@ -225,8 +231,9 @@ p {
 }
 
 .p-second {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 360;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
 #moo {
@@ -240,6 +247,8 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: all .5s ease-in-out;
     border-radius: 50%;
+    margin: 4px;
+    filter: drop-shadow(3px 3px 2px #000000a9);
 
 }
 
@@ -448,6 +457,11 @@ p {
 #contact {
     height: auto;
     background-color: #ecf0f5;
+}
+
+.contact p{
+    font-family: "Roboto","Helvetica","Arial",sans-serif; 
+    font-weight: 380;
 }
 
 .contact-form {

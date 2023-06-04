@@ -84,6 +84,11 @@ p {
     border-bottom: 1px solid #163c64ce;
 
 }
+#nav {
+    opacity: 1;
+    background-color: rgba(51, 58, 66, 0.557);
+    border-bottom: 1px solid #163c64ce;
+}
 
 .nav-link {
     font-size: 20px;
@@ -460,6 +465,11 @@ p {
 }
 
 .contact p{
+    font-family: "Roboto","Helvetica","Arial",sans-serif; 
+    font-weight: 380;
+}
+
+.contact h3{
     font-family: "Roboto","Helvetica","Arial",sans-serif; 
     font-weight: 380;
 }

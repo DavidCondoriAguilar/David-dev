@@ -76,15 +76,15 @@ p {
 }
 
 .nav-cont {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    
     opacity: 1;
     background-color: rgba(51, 58, 66, 0.557);
     border-bottom: 1px solid #163c64ce;
 
 }
 #nav {
+
+
     opacity: 1;
     background-color: rgba(51, 58, 66, 0.557);
     border-bottom: 1px solid #163c64ce;
@@ -676,6 +676,9 @@ button[type="submit"]:hover {
     .formulario {
         height: auto;
     }
+    .img-circle {
+        width: 102px;
+    }
 
 }
 
@@ -745,5 +748,5 @@ button[type="submit"]:hover {
         width: 0;
         right: 0;
         left: unset;
-    }
+    }   
 }

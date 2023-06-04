@@ -4,13 +4,16 @@
     box-sizing: border-box;
     font-family: 'Jura', sans-serif;
 
+
 }
 
 :root {
     --david-color-h3: 18px;
     --david-color-menu: 20px;
-    scroll-behavior: smooth;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 /* body {
     animation: ;
@@ -322,7 +325,6 @@ p {
     background-color: #fff;
 }
 
-
 #whatsapp-button {
 
     margin-bottom: 30px;
@@ -397,6 +399,9 @@ p {
     height: auto;
     background-color: #f0f2f5;
 
+}
+#road-too h2 {
+    padding-top: 45px;
 }
 
 
@@ -528,6 +533,11 @@ button[type="submit"]:hover {
     background-color: #005ea6;
 }
 
+#moo {
+    position: relative;
+    bottom: 60px;
+}
+
 /* ADAPTABLE- @MEDIA */
 @media screen and (max-width:767px) {
 
@@ -588,8 +598,9 @@ button[type="submit"]:hover {
 
     #moo {
         position: relative;
-        top: 2rem;
-        right: 10px;
+    bottom: -1px;
+    right: 88px;
+    margin: 30px;;
     }
 
     #this-sht-two {
@@ -684,7 +695,7 @@ button[type="submit"]:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .first-section {
-        height: 100VH;
+        height: 75vh;
     }
 
     .second-section {

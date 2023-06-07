@@ -1,3 +1,4 @@
+// TYPED
 let typed = new Typed(".type", {
   strings: ["Developer&#128187;", "Designer&#128736;", "Freelancer&#10166;"],
   typeSpeed: 150,
@@ -5,33 +6,25 @@ let typed = new Typed(".type", {
   loop: true,
 });
 
+// AUDIO
 
 let sound = new Audio();
 sound.src = "mario-bros tuberia.mp3";
 
 
-// const icon = document.getElementById("links");
-// icon.addEventListener("mouseover", () => {
-//   icon.style.transform = "translateY(212px)";
-// });
-// icon.addEventListener("mouseout", () => {
-//   icon.style.transform = "none";
-// });
+// LOADING
+window.addEventListener('load', function() {
+  var loadingOverlay = document.querySelector('.loading-overlay');
+  var loadingMessage = document.querySelector('.loading-message');
+  
+  setTimeout(function() {
+    loadingOverlay.style.display = 'none';
+    AOS.refresh(); // Activar las animaciones de AOS
+
+    // Agregar acciones adicionales después de la carga
+    // Por ejemplo, iniciar el juego de "Simon Dice"
+  }, 3000); // 3000 ms = 3 segundos de espera
+});
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const icon = document.getElementById('my-icon');
-  
-//     if (icon) {
-//       icon.addEventListener('mouseover', () => {
-//         icon.style.transform = 'translateY(32px)';
-//       });
-  
-//       icon.addEventListener('mouseout', () => {
-//         icon.style.transform = 'none';
-//       });
-//     } else {
-//       console.log('Elemento no encontrado');
-//     }
-//   });
-  
+

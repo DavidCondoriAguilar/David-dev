@@ -1,3 +1,13 @@
+// INICIO LIBRERIA AOS 
+window.addEventListener("load", function() {
+  var myElement = document.getElementById("myElement");
+  myElement.setAttribute("data-aos", "zoom-out-right");
+  myElement.setAttribute("data-aos-duration", "1500");
+
+  AOS.init();
+});
+
+
 // TYPED LIBRARY
 let typed = new Typed(".type", {
   strings: ["Developer&#128187;", "Designer&#128736;", "Freelancer&#10166;"],
@@ -19,5 +29,10 @@ window.addEventListener("load", function () {
     loadingOverlay.style.display = "none";
 
     // Agregar acciones adicionales después de la carga
-  }, 2000); // 3000 ms = 3 segundos de espera
+  }, 2000); // 2000 ms = 2 segundos de espera
 });
+window.addEventListener("load", function() {
+  AOS.init();
+});
+
+

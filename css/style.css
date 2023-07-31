@@ -706,20 +706,12 @@ button[type="submit"]:hover {
         width: 102px;
     }
 
-    .fixed-top {
-        position: fixed;
-        top: 0;
-        right: 140px;
-        left: 0;
-        z-index: 1030;
-    }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .first-section {
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
 
     .second-section {

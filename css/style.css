@@ -107,7 +107,6 @@ p {
 
 /* PRIMERA SECCION */
 .first-section {
-
     color: #fff;
     height: 100vh;
 
@@ -579,17 +578,23 @@ button[type="submit"]:hover {
 
     .first-section {
         height: auto;
+        width: 100vw;
+
 
     }
 
     .second-section {
         height: auto;
         padding: 8px;
+        width: 100vw;
+
     }
 
     .third-section {
         height: auto;
         background-color: #16191f;
+        width: 100vw;
+
     }
 
     .four-section {
@@ -701,21 +706,34 @@ button[type="submit"]:hover {
         width: 102px;
     }
 
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 140px;
+        left: 0;
+        z-index: 1030;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .first-section {
-        height: 75vh;
+        height: auto;
+        width: 100vw;
     }
 
     .second-section {
         height: auto;
         background-color: #ecf0f5;
+        width: 100vw;
+
     }
 
     .third-section {
         height: auto;
         background-color: #16191f;
+        width: 100vw;
+
     }
 
     #this-sht {
@@ -728,6 +746,8 @@ button[type="submit"]:hover {
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
+        width: 100vw;
+
     }
 
     .hehy {

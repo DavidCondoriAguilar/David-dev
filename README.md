@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **Any Question, is fun!**
 
-- 📫 How to reach me **davidragewild@gmail.com**
+- 📫 How to reach me **davids.condori.aguilar@gmail.com**
 
 - ⚡ Fun fact **I'M GYMRAT AND DEV- La programación y el gimnasio tienen algo en común: ambos pueden ser desafiantes al principio, pero con práctica constante, puedes lograr grandes resultados.**
 

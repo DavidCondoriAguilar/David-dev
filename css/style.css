@@ -86,11 +86,9 @@ p {
 
 }
 #nav {
-
-
     opacity: 1;
     background-color: rgba(51, 58, 66, 0.557);
-    border-bottom: 1px solid #163c64ce;
+    border-bottom: 3px solid #2d50b0b2;
 }
 
 .nav-link {

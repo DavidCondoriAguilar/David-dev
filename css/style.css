@@ -87,14 +87,10 @@ p {
 }
 #nav {
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+
     opacity: 1;
     background-color: rgba(51, 58, 66, 0.557);
     border-bottom: 1px solid #163c64ce;
-    z-index: 7;
 }
 
 .nav-link {
@@ -553,18 +549,6 @@ button[type="submit"]:hover {
         align-items: center;
 
   }
-  
-#nav {
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 1;
-    background-color: rgba(51, 58, 66, 0.557);
-    border-bottom: 1px solid #163c64ce;
-    z-index: 7;
-}
 
     .type {
         color: #0660c0;
@@ -752,8 +736,10 @@ button[type="submit"]:hover {
         background-image: url(https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/cxz.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center;
         background-size: cover;
+        background-position: center;
+        width: 100vw;
+
     }
 
     .hehy {

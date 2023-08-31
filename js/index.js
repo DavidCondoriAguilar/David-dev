@@ -1,6 +1,6 @@
 // INICIO LIBRERIA AOS 
 window.addEventListener("load", function() {
-  var myElement = document.getElementById("myElement");
+  let myElement = document.getElementById("myElement");
   myElement.setAttribute("data-aos", "zoom-out-right");
   myElement.setAttribute("data-aos-duration", "1500");
 
@@ -23,7 +23,7 @@ sound.src = "mario-bros tuberia.mp3";
 
 // LOADING
 window.addEventListener("load", function () {
-  var loadingOverlay = document.querySelector(".loading-overlay");
+  let loadingOverlay = document.querySelector(".loading-overlay");
 
   setTimeout(function () {
     loadingOverlay.style.display = "none";

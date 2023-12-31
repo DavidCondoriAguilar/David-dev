@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Jura', sans-serif;
+    scroll-behavior: smooth;
+
 
 
 }
@@ -11,9 +13,7 @@
     --david-color-h3: 18px;
     --david-color-menu: 20px;
 }
-html {
-    scroll-behavior: smooth;
-  }
+
 
 /* body {
     animation: ;
@@ -209,6 +209,8 @@ p {
 .img-IN {
     width: 50px;
     height: 37px;
+    position: relative;
+    bottom: -34px
 }
 
 .flex-1 {
@@ -221,12 +223,12 @@ p {
     color: #0660c0;
     font-weight: 800;
 }
-
+/* 
 #this-sht {
     background: rgb(236, 236, 236);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     height: auto;
-}
+} */
 
 
 #this-sht-two {
@@ -234,12 +236,13 @@ p {
     background-color: #ffffff;
 }
 
+/* 
 .hehy {
     background: rgb(236, 236, 236);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     opacity: 0;
     transition: 1s;
-}
+} */
 
 .p-second {
     font-size: 1.1rem;
@@ -400,7 +403,7 @@ p {
 
 #road-too {
     height: auto;
-    background-color: #f0f2f5;
+    background-color: rgba(231, 222, 222, 0.16);
 
 }
 #road-too h2 {
@@ -413,11 +416,11 @@ p {
     transition: all 0.5s ease-in-out;
 }
 
-
+/* 
 #road-too img:hover {
     box-shadow: 20px 18px 15px rgba(0, 0, 0, 0.2);
 
-}
+} */
 
 #road-too h2 {
     color: #0660c0;

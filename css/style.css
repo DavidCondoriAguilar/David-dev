@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -80,12 +79,13 @@ p {
 }
 
 .nav-cont {
-    
+
     opacity: 1;
     background-color: rgba(51, 58, 66, 0.557);
     border-bottom: 1px solid #163c64ce;
 
 }
+
 #nav {
 
     position: fixed;
@@ -220,10 +220,12 @@ p {
     justify-content: space-around;
     align-content: center;
 }
+
 .flex-1 h4 {
     color: #0660c0;
     font-weight: 800;
 }
+
 /* 
 #this-sht {
     background: rgb(236, 236, 236);
@@ -248,7 +250,7 @@ p {
 .p-second {
     font-size: 1.1rem;
     font-weight: 360;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 #moo {
@@ -407,6 +409,7 @@ p {
     background-color: rgba(231, 222, 222, 0.16);
 
 }
+
 #road-too h2 {
     padding-top: 45px;
 }
@@ -476,13 +479,13 @@ p {
     background-color: #ecf0f5;
 }
 
-.contact p{
-    font-family: "Roboto","Helvetica","Arial",sans-serif; 
+.contact p {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 380;
 }
 
-.contact h3{
-    font-family: "Roboto","Helvetica","Arial",sans-serif; 
+.contact h3 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 380;
 }
 
@@ -556,19 +559,19 @@ button[type="submit"]:hover {
         transform: translateY(-24%);
         align-items: center;
 
-  }
-  
-#nav {
+    }
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 1;
-    background-color: rgba(51, 58, 66, 0.557);
-    border-bottom: 1px solid #163c64ce;
-    z-index: 7;
-}
+    #nav {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        background-color: rgba(51, 58, 66, 0.557);
+        border-bottom: 1px solid #163c64ce;
+        z-index: 7;
+    }
 
     .type {
         color: #0660c0;
@@ -633,9 +636,10 @@ button[type="submit"]:hover {
 
     #moo {
         position: relative;
-    bottom: -1px;
-    right: 88px;
-    margin: 30px;;
+        bottom: -1px;
+        right: 88px;
+        margin: 30px;
+        ;
     }
 
     #this-sht-two {
@@ -722,6 +726,7 @@ button[type="submit"]:hover {
     .formulario {
         height: auto;
     }
+
     .img-circle {
         width: 102px;
     }
@@ -766,7 +771,7 @@ button[type="submit"]:hover {
 }
 
 
-    /* LOADER FOOTER  */
+/* LOADER FOOTER  */
 .loader {
     --height-of-loader: 4px;
     --loader-color: #0071e2;
@@ -799,7 +804,7 @@ button[type="submit"]:hover {
         width: 0;
         right: 0;
         left: unset;
-    }   
+    }
 }
 
 /* LOADING */
@@ -819,25 +824,27 @@ button[type="submit"]:hover {
     font-family: Arial, sans-serif;
     font-size: 24px;
     letter-spacing: 2px;
-  }
-  
-  .loading-message {
+}
+
+.loading-message {
     display: none;
-  }
-  
-  .loading-icon {
+}
+
+.loading-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 4px solid #fff;
     border-top-color: #2811a7;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-  
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -851,9 +858,10 @@ button[type="submit"]:hover {
     --david-color-h3: 18px;
     --david-color-menu: 20px;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 /* body {
     animation: ;
@@ -919,12 +927,13 @@ p {
 }
 
 .nav-cont {
-    
+
     opacity: 1;
     background-color: rgba(51, 58, 66, 0.557);
     border-bottom: 1px solid #163c64ce;
 
 }
+
 #nav {
     opacity: 1;
     background-color: rgba(51, 58, 66, 0.557);
@@ -1051,6 +1060,7 @@ p {
     justify-content: space-around;
     align-content: center;
 }
+
 .flex-1 h4 {
     color: #0660c0;
     font-weight: 800;
@@ -1074,7 +1084,7 @@ p {
 .p-second {
     font-size: 1.1rem;
     font-weight: 360;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 #moo {
@@ -1233,6 +1243,7 @@ p {
     background-color: #e4e8ec;
 
 }
+
 #road-too h2 {
     padding-top: 45px;
 }
@@ -1302,13 +1313,13 @@ p {
     background-color: #ecf0f5;
 }
 
-.contact p{
-    font-family: "Roboto","Helvetica","Arial",sans-serif; 
+.contact p {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 380;
 }
 
-.contact h3{
-    font-family: "Roboto","Helvetica","Arial",sans-serif; 
+.contact h3 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 380;
 }
 
@@ -1382,7 +1393,7 @@ button[type="submit"]:hover {
         transform: translateY(-24%);
         align-items: center;
 
-  }
+    }
 
     .type {
         color: #0660c0;
@@ -1447,9 +1458,10 @@ button[type="submit"]:hover {
 
     #moo {
         position: relative;
-    bottom: -1px;
-    right: 88px;
-    margin: 30px;;
+        bottom: -1px;
+        right: 88px;
+        margin: 30px;
+        ;
     }
 
     #this-sht-two {
@@ -1536,6 +1548,7 @@ button[type="submit"]:hover {
     .formulario {
         height: auto;
     }
+
     .img-circle {
         width: 102px;
     }
@@ -1582,7 +1595,7 @@ button[type="submit"]:hover {
 }
 
 
-    /* LOADER FOOTER  */
+/* LOADER FOOTER  */
 .loader {
     --height-of-loader: 4px;
     --loader-color: #0071e2;
@@ -1615,7 +1628,7 @@ button[type="submit"]:hover {
         width: 0;
         right: 0;
         left: unset;
-    }   
+    }
 }
 
 /* LOADING */
@@ -1635,22 +1648,24 @@ button[type="submit"]:hover {
     font-family: Arial, sans-serif;
     font-size: 24px;
     letter-spacing: 2px;
-  }
-  
-  .loading-message {
+}
+
+.loading-message {
     display: none;
-  }
-  
-  .loading-icon {
+}
+
+.loading-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 4px solid #fff;
     border-top-color: #2811a7;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    to { transform: rotate(360deg); }
+}
 
-  }
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+}

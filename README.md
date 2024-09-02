@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Angular, React, Node-RED**
 
-- 👨‍💻 All of my projects are available at [https://davidwilld.github.io/David-dev/](https://davidwilld.github.io/David-dev/)
+- 👨‍💻 All of my projects are available at [https://davidwilld.github.io/David-dev/](https://github.com/DavidCondoriAguilar)
 
 - 💬 Ask me about **Any Question, is fun!**
 

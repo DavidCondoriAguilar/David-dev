@@ -3,7 +3,8 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=davidwilld&label=Profile%20views&color=0e75b6&style=flat" alt="davidwilld" /> </p>
 
-- 🌱 I’m currently learning **Angular, React, Node-RED**
+- 🌱 I’m currently learning 
+**Springboot, Android, Xcode-Swift**
 
 - 👨‍💻 All of my projects are available at [https://davidwilld.github.io/David-dev/](https://github.com/DavidCondoriAguilar)
 

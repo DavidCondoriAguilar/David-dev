@@ -171,6 +171,7 @@ p {
     transform: translateX(15em);
 }
 
+
 .social {
     display: flex;
     flex-direction: row;
@@ -232,6 +233,19 @@ p {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     height: auto;
 } */
+.slider-container {
+    overflow: hidden; /* Ocultar el contenido que desborda */
+    white-space: nowrap; /* Mantener las imágenes en una sola línea */
+    position: relative; /* Posicionar correctamente el slider */
+}
+
+.slider {
+    display: inline-block; /* Permitir desplazamiento horizontal */
+    transition: transform 0.5s ease; /* Transición suave para el movimiento */
+    white-space: nowrap; /* Mantener las imágenes en una sola línea */
+    will-change: transform; /* Mejorar el rendimiento */
+}
+
 
 
 #this-sht-two {

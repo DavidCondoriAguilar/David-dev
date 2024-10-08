@@ -33,7 +33,7 @@
 </head>
 
 <body>
-<!-- 
+    <!-- 
     <div class="loading-overlay">
         <div class="loading-icon"></div>
     </div> -->
@@ -47,21 +47,29 @@
                         <i class="fa-solid fa-hands-asl-interpreting"></i>
                     </a>
                     <h2 style="font-weight:900; font-size: 25px;" class="px-3">David-dev</h2>
-                    <button id="button" class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                    <button id="button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
                         <div class="navbar-nav d-flex justify-content-start">
-                            <a class="nav-link" href="#">Home</a>
-                            <a class="nav-link" href="#about-me">Skills</a>
-                            <a class="nav-link" href="#road-too">Works</a>
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#" data-lang="home">Home</a>
+                            <a class="nav-link" href="#about-me" data-lang="skills">Skills</a>
+                            <a class="nav-link" href="#road-too" data-lang="works">Works</a>
+                            <a class="nav-link" href="#contact" data-lang="contact">Contact</a>
+                            <div class="form-check form-switch mx-3 mt-2">
+                                <input class="form-check-input mt-" type="checkbox" id="lang-switch" checked>
+                                <label class="form-check-label" for="lang-switch">
+                                    <i class="fa-solid fa-globe"></i>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
+
+
         </header>
 
         <!-- Section- I(SOBRE MI- I) -->
@@ -104,7 +112,7 @@
 
                             <div data-aos="zoom-in-up" data-aos-duration="2000">
                                 <a target="_blank"
-                                    href="https://drive.google.com/file/d/1RpOFuyBYzlcC3eK4EQyu_sChtH56XKYv/view?usp=drivesdk">
+                                    href="https://drive.google.com/drive/folders/19ewA4QhvjsmLUTyxkDDaihu-xVlc86qU?usp=sharing">
                                     <button class="first-button">Descargar CV</button>
                                 </a>
                             </div>
@@ -137,97 +145,111 @@
                                     alt="Linkedin">
                             </a>
                         </div>
-                        <p data-aos="zoom-out-right" data-aos-duration="1500" class="p-second px-4 py-3">¡Hola! Y
-                            bienvenido a mi portafolio. Mi nombre es David Condori Aguilar. Soy un desarrollador web
-                            apasionado. Mi objetivo es ofrecer resultados atractivos, seguros y escalables para cada
-                            proyecto en el que trabajo. Ya sea que esté desarrollando o creando interfaces de usuario
-                            atractivas, ¡siempre estoy preparado para un desafío!. El autoaprendizaje, la perseverancia
-                            y la curiosidad son algunas de las cosas que me caracterizan.
+                        <p data-aos="zoom-out-right" data-aos-duration="1500" class="p-second px-4 py-3">¡Bienvenido a
+                            mi portafolio!
+
+                            Mi nombre es David Condori Aguilar, un desarrollador web apasionado. Mi objetivo es ofrecer
+                            resultados atractivos, seguros y escalables para cada proyecto en el que trabajo. Ya sea
+                            desarrollando aplicaciones o creando interfaces de usuario cautivadoras, ¡siempre estoy
+                            preparado para un desafío!
+
+                            El autoaprendizaje, la perseverancia y la curiosidad son algunas de las características que
+                            me definen.
                         </p>
                     </div>
                     <div class="col-xxl-5 col-md-5 col-sm-12 text-center dest">
                         <h5 data-aos="zoom-out-right" data-aos-duration="1500" id="moo" class="py-2 px-1">
-                            Tecnologías
-                            Destacadas</h5>
-                        <div class="hehy p-4 " data-aos="zoom-out-right" data-aos-duration="1500">
-                            <picture>
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-javascript.svg"
-                                alt="JavaScript" title="JavaScript">
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-css3.svg"
-                                alt="CSS" title="CSS">
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-html-5.svg"
-                                alt="HTML" title="HTML">
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-bootstrap.svg"
-                                alt="Bootstrap" title="Bootstrap">
+                            Tecnologías Destacadas
+                        </h5>
+                        <div class="hehy p-4" data-aos="zoom-out-right" data-aos-duration="1500">
+                            <div class="slider-container">
+                                <div class="slider-container">
+                                    <div class="slider mt-4">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-javascript.svg"
+                                            alt="JavaScript" title="JavaScript">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-css3.svg"
+                                            alt="CSS" title="CSS">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-html-5.svg"
+                                            alt="HTML" title="HTML">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-bootstrap.svg"
+                                            alt="Bootstrap" title="Bootstrap">
 
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-github.svg"
-                                alt="Git" title="github">
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/figma.svg"
-                                alt="Figma" title="Figma">
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/git.svg"
-                                alt="Git" title="Git">
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sql.svg"
-                                alt="SQL" title="SQL">
-                            <img loading="lazy box" class="tecnologi py-1" width="80" height="50"
-                                src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sass.svg"
-                                alt="Sass" title="Sass">
-                            <img loading="lazy box" class="tecnologi py-1 p-3" width="80" height="50"
-                            src="image/angular.svg" alt="Angular" title="Angular">
-                            <img loading="lazy box" class="tecnologi py-1 p-3" width="80" height="50"
-                                src="image/react.svg" alt="react" title="React">
-                            <img loading="lazy box" class="tecnologi py-1 p-3" width="80" height="50"
-                                src="image/typescript.svg" alt="TypeScript" title="TypeScript">
-                            <img loading="lazy box" class="tecnologi py-1 p-3" width="80" height="50"
-                                src="image/jquery.svg" alt="Jquery" title="jquery">
-                            <img loading="lazy box" class="tecnologi py-1 p-3" width="80" height="50"
-                                src="image/tailwindcss.svg" alt="tailwindcss" title="tailwindcss">
-                                <img loading="lazy box" class="tecnologi py-1 p-3" width="80" height="50"
-                                src="image/wordpress.svg" alt="wordpress" title="wordpress">
-                            </picture>
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/git.svg"
+                                            alt="Git" title="Git">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sql.svg"
+                                            alt="SQL" title="SQL">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/java.svg" alt="Java" title="Java">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/springg.svg" alt="Spring Boot" title="Spring Boot">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/csharpp.svg" alt="C#" title="C#">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/net.svg" alt=".Net" title=".Net">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sass.svg"
+                                            alt="Sass" title="Sass">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/angular.svg" alt="Angular" title="Angular">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/react.svg" alt="React" title="React">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/typescript.svg" alt="TypeScript" title="TypeScript">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/jquery.svg" alt="jQuery" title="jQuery">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="image/wordpress.svg" alt="WordPress" title="WordPress">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-github.svg"
+                                            alt="Git" title="Git">
+                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
+                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/figma.svg"
+                                            alt="Figma" title="Figma">
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
 
 
-            
+
         </div>
     </article>
 
     <!-- !WORKS-TO-PORTFOLIO -->
 
     <article id="road-too">
-        <div class="container py-3" >
+        <div class="container py-3">
             <h2 class="text-center ">Works &#x2693;</h2>
-            <div class="row py-2" >
+            <div class="row py-2">
 
-                <div 
-                    class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-4 mx-auto">
+                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-4 mx-auto">
                     <a href="https://davidcondoriaguilar.github.io/ReactCRUD/" target="_blank">
                         <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg5.jpg"
                             class="img-fluid rounded" alt="ReactCRUD" loading="lazy">
                     </a>
                 </div>
-                
-                <div
-                    class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-1 mx-auto ">
+
+                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-1 mx-auto ">
                     <a href="https://camaleon-ecologicoo.netlify.app/" target="_blank">
                         <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg1.jpg"
                             class="img-fluid rounded" alt="Web-Bolsas Ecológicas" loading="lazy">
                     </a>
                 </div>
 
-                <div
-                    class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-2 mx-auto">
+                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-2 mx-auto">
                     <a href="https://artecu.netlify.app/" target="b
                     ">
                         <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg2.jpg"
@@ -235,24 +257,22 @@
                     </a>
                 </div>
 
-                <div
-                    class="col-xxl-4 col-md-6 mt-3 col-sm-12 work-3 mx-auto">
+                <div class="col-xxl-4 col-md-6 mt-3 col-sm-12 work-3 mx-auto">
                     <a href="https://kawi-barbershoop.netlify.app/" target="_blank">
                         <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg3.jpg"
                             class="img-fluid rounded" alt="Web-Barber" loading="lazy">
                     </a>
                 </div>
 
-                <div 
-                    class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-4 mx-auto">
+                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-4 mx-auto">
                     <a href="https://stunning-douhua-45181d.netlify.app/index.html" target="_blank">
                         <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg4.jpg"
                             class="img-fluid rounded" alt="Web-Gym" loading="lazy">
                     </a>
                 </div>
 
-                
-                
+
+
             </div>
         </div>
     </article>
@@ -263,11 +283,13 @@
             <div class="row ">
                 <div class="contact col-xxl-6 col-md-6 mt-3 col-sm-12 mx-auto py-2" data-aos="zoom-out-right"
                     data-aos-duration="2000">
-                    <h3 style="color: #0660c0;"> ¡Estar en contacto es fácil!</h3>
-                    <p> ¡No seas tímido! Es divertido conocer gente nueva</p>
-                    <p> <i class="bi bi-geo-alt text-primary"></i> Lima- Perú</p>
-                    <p> <i class="bi bi-phone-vibrate text-primary"></i> +51 928 193 119</p>
-                    <p> <i class="bi bi-send-plus text-primary"></i> davids.condori.aguilar@gmail.com</p>
+                    <h3 style="color: #0660c0;" data-lang="contactTitle">¡Estar en contacto es fácil!</h3>
+                    <p data-lang="contactIntro">¡No seas tímido! Es divertido conocer gente nueva</p>
+                    <p><i class="bi bi-geo-alt text-primary"></i> <span data-lang="location">Lima- Perú</span></p>
+                    <p><i class="bi bi-phone-vibrate text-primary"></i> <span data-lang="phone">+51 928 193 119</span>
+                    </p>
+                    <p><i class="bi bi-send-plus text-primary"></i> <span
+                            data-lang="email">davids.condori.aguilar@gmail.com</span></p>
                 </div>
 
                 <div class="formulario col-xxl-6 col-md-6 mt-3 col-sm-12 mx-auto py-2" data-aos="zoom-out-right"
@@ -294,7 +316,7 @@
                     </form>
                 </div>
             </div>
-             <div class="hiddin">
+            <div class="hiddin">
                 <a id="whatsapp-button"
                     href="https://wa.me/51928193119?text=Hola,%20vengo%20desde%20tu%20sitio%20web%20y%20me%20gustaría%20obtener%20más%20información%20sobre..."
                     target="_blank">

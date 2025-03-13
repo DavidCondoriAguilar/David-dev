@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 
 <head>
     <!-- META-TAG -->
-    <meta name="keywords" content="Portfolio, DavidDev, david-portfolio" />
+    <meta name="keywords" content="Portfolio, DavidDev, David Condori Aguilar, david-portfolio, Frontend Developer, Web Developer, React Developer, Full Stack Developer" />
     <meta name="author" content="David Condori Aguilar" />
-    <meta name="description" content="Portfolio Master David-Dev">
+    <meta name="description" content="Portfolio de David Condori Aguilar - Desarrollador Frontend especializado en React y tecnologías web modernas. Experiencia en desarrollo full stack y diseño de interfaces de usuario.">
     <meta name="copyright" content="David Condori Aguilar" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://davidcondoriaguilar.github.io/">
+    <meta property="og:title" content="David Condori Aguilar - Frontend Developer">
+    <meta property="og:description" content="Portfolio de David Condori Aguilar - Desarrollador Frontend especializado en React y tecnologías web modernas.">
+    <meta property="og:image" content="image/perfilTerno.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://davidcondoriaguilar.github.io/">
+    <meta property="twitter:title" content="David Condori Aguilar - Frontend Developer">
+    <meta property="twitter:description" content="Portfolio de David Condori Aguilar - Desarrollador Frontend especializado en React y tecnologías web modernas.">
+    <meta property="twitter:image" content="image/perfilTerno.jpg">
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="es" href="https://davidcondoriaguilar.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://davidcondoriaguilar.github.io/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://davidcondoriaguilar.github.io/" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -19,7 +35,7 @@
     <!-- GOOGLE-FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b82695f5b7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- AOS -->
@@ -43,25 +59,29 @@
         <header class="nav-cont">
             <nav id="nav" class="navbar navbar-expand-lg fixed-top">
                 <div class="container px-3">
-                    <a style="color: #0660c0;" href="#">
+                    <a href="#" class="brand-logo">
                         <i class="fa-solid fa-hands-asl-interpreting"></i>
+                        <h2 class="brand-text" data-lang="brandName">David-dev</h2>
                     </a>
-                    <h2 style="font-weight:900; font-size: 25px;" class="px-3">David-dev</h2>
-                    <button id="button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
-                        <div class="navbar-nav d-flex justify-content-start">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
                             <a class="nav-link" href="#" data-lang="home">Home</a>
                             <a class="nav-link" href="#about-me" data-lang="skills">Skills</a>
                             <a class="nav-link" href="#road-too" data-lang="works">Works</a>
                             <a class="nav-link" href="#contact" data-lang="contact">Contact</a>
                             <div class="form-check form-switch mx-3 mt-2">
-                                <input class="form-check-input mt-" type="checkbox" id="lang-switch" checked>
+                                <input class="form-check-input" type="checkbox" id="lang-switch" checked>
                                 <label class="form-check-label" for="lang-switch">
                                     <i class="fa-solid fa-globe"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-switch mx-3 mt-2">
+                                <input class="form-check-input" type="checkbox" id="theme-switch">
+                                <label class="form-check-label" for="theme-switch">
+                                    <i class="fa-solid fa-moon"></i>
                                 </label>
                             </div>
                         </div>
@@ -80,10 +100,9 @@
                         <div class="col">
                             <div class="name py-2">
                                 <div data-aos="zoom-in-up" data-aos-duration="2000">
-                                    <H1>I'm David Condori <br> <span class="type"></span></H1>
-                                </div>
-                                <div data-aos="zoom-in-up" data-aos-duration="2000">
-                                    <h2>Dev Front-end</h2>
+                                    <H1 data-lang="greeting">I'm David Condori <br>
+                                        </H1>
+                                        <span class="type"></span>
                                 </div>
                             </div>
                             <div data-aos="zoom-in-up" data-aos-duration="2000" class="container">
@@ -128,15 +147,15 @@
         <div class="second-section ">
             <div class="container info">
                 <div class="row ">
-                    <h2 style="color: #0660c0;" data-aos="zoom-out-right" data-aos-duration="1500"
+                    <h2 style="color: #0660c0;" data-aos="zoom-out-right" data-aos-duration="1500" data-lang="aboutMeTitle"
                         class="py-4 text-center">Sobre Mi &#129416;</h2>
-                    <h5 data-aos="zoom-out-right" data-aos-duration="1500" class="py-2 subs">Perfil</h5>
+                    
                     <div id="this-sht" class=" col-xxl-7 col-md-7 col-sm-12 text-center p-1">
                         <div class="flex-1">
                             <img data-aos="zoom-out-right" data-aos-duration="1500" class="img-circle img-fluid"
                                 alt="Image-perfil" src="image/perfilTerno.jpg">
                             <div class="row px-2 py-3 mt-4">
-                                <h4 data-aos="zoom-out-right" data-aos-duration="1500">David Condori Aguilar</h4>
+                                <h4 data-aos="zoom-out-right" data-aos-duration="1500" data-lang="profileName">David Condori Aguilar</h4>
                             </div>
                             <a target="_blank" href="https://www.linkedin.com/in/david-condori-aguilar/">
                                 <img data-aos="zoom-out-right" data-aos-duration="1500" loading="lazy" width="47"
@@ -145,77 +164,41 @@
                                     alt="Linkedin">
                             </a>
                         </div>
-                        <p data-aos="zoom-out-right" data-aos-duration="1500" class="p-second px-4 py-3">¡Bienvenido a
-                            mi portafolio!
-
-                            Mi nombre es David Condori Aguilar, un desarrollador web apasionado. Mi objetivo es ofrecer
-                            resultados atractivos, seguros y escalables para cada proyecto en el que trabajo. Ya sea
-                            desarrollando aplicaciones o creando interfaces de usuario cautivadoras, ¡siempre estoy
-                            preparado para un desafío!
-
-                            El autoaprendizaje, la perseverancia y la curiosidad son algunas de las características que
-                            me definen.
+                        <p data-aos="zoom-out-right" data-aos-duration="1500" class="p-second px-4 py-3" data-lang="aboutMeText">
+                            ¡Bienvenido a mi portafolio! Mi nombre es David Condori Aguilar, un desarrollador web apasionado. Mi objetivo es ofrecer resultados atractivos, seguros y escalables para cada proyecto en el que trabajo. Ya sea desarrollando aplicaciones o creando interfaces de usuario cautivadoras, ¡siempre estoy preparado para un desafío! El autoaprendizaje, la perseverancia y la curiosidad son algunas de las características que me definen.
                         </p>
                     </div>
                     <div class="col-xxl-5 col-md-5 col-sm-12 text-center dest">
-                        <h5 data-aos="zoom-out-right" data-aos-duration="1500" id="moo" class="py-2 px-1">
-                            Tecnologías Destacadas
+                        <h5 data-aos="zoom-out-right" data-aos-duration="1500" data-lang="techTitle">
+                            Tecnologías & Herramientas
                         </h5>
-                        <div class="hehy p-4" data-aos="zoom-out-right" data-aos-duration="1500">
+                        <div class="hehy" data-aos="zoom-out-right" data-aos-duration="1500">
                             <div class="slider-container">
-                                <div class="slider-container">
-                                    <div class="slider mt-4">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-javascript.svg"
-                                            alt="JavaScript" title="JavaScript">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-css3.svg"
-                                            alt="CSS" title="CSS">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-html-5.svg"
-                                            alt="HTML" title="HTML">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-bootstrap.svg"
-                                            alt="Bootstrap" title="Bootstrap">
-
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/git.svg"
-                                            alt="Git" title="Git">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sql.svg"
-                                            alt="SQL" title="SQL">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/java.svg" alt="Java" title="Java">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/springg.svg" alt="Spring Boot" title="Spring Boot">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/csharpp.svg" alt="C#" title="C#">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/net.svg" alt=".Net" title=".Net">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sass.svg"
-                                            alt="Sass" title="Sass">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/angular.svg" alt="Angular" title="Angular">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/react.svg" alt="React" title="React">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/typescript.svg" alt="TypeScript" title="TypeScript">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/jquery.svg" alt="jQuery" title="jQuery">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="image/wordpress.svg" alt="WordPress" title="WordPress">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-github.svg"
-                                            alt="Git" title="Git">
-                                        <img loading="lazy" class="tecnologi py-1" width="80" height="50"
-                                            src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/figma.svg"
-                                            alt="Figma" title="Figma">
-                                    </div>
+                                <div class="slider">
+                                    <!-- Primera serie de iconos -->
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-javascript.svg" alt="JavaScript" title="JavaScript">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-css3.svg" alt="CSS" title="CSS">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-html-5.svg" alt="HTML" title="HTML">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-bootstrap.svg" alt="Bootstrap" title="Bootstrap">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/git.svg" alt="Git" title="Git">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sql.svg" alt="SQL" title="SQL">
+                                    <img loading="lazy" class="tecnologi" src="image/java.svg" alt="Java" title="Java">
+                                    <img loading="lazy" class="tecnologi" src="image/springg.svg" alt="Spring Boot" title="Spring Boot">
+                                    <img loading="lazy" class="tecnologi" src="image/csharpp.svg" alt="C#" title="C#">
+                                    <img loading="lazy" class="tecnologi" src="image/net.svg" alt=".Net" title=".Net">
+                                    
+                                    <!-- Segunda serie de iconos (duplicados para el efecto infinito) -->
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-javascript.svg" alt="JavaScript" title="JavaScript">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-css3.svg" alt="CSS" title="CSS">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-html-5.svg" alt="HTML" title="HTML">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/icons8-bootstrap.svg" alt="Bootstrap" title="Bootstrap">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/git.svg" alt="Git" title="Git">
+                                    <img loading="lazy" class="tecnologi" src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/sql.svg" alt="SQL" title="SQL">
+                                    <img loading="lazy" class="tecnologi" src="image/java.svg" alt="Java" title="Java">
+                                    <img loading="lazy" class="tecnologi" src="image/springg.svg" alt="Spring Boot" title="Spring Boot">
+                                    <img loading="lazy" class="tecnologi" src="image/csharpp.svg" alt="C#" title="C#">
+                                    <img loading="lazy" class="tecnologi" src="image/net.svg" alt=".Net" title=".Net">
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -228,51 +211,252 @@
         </div>
     </article>
 
+    <!-- Estadísticas -->
+    <article class="stats-section">
+        <div class="container py-5">
+            <div class="row stats-container">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <div class="stat-number" data-target="7">0</div>
+                        <div class="stat-label" data-lang="completedProjects">Proyectos Completados</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <i class="fas fa-coffee"></i>
+                        <div class="stat-number" data-target="1700">0</div>
+                        <div class="stat-label" data-lang="coffeeCups">Tazas de Café</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-number" data-target="2000">0</div>
+                        <div class="stat-label" data-lang="codeHours">Horas de Código</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-number" data-target="7">0</div>
+                        <div class="stat-label" data-lang="happyClients">Clientes Satisfechos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Timeline Section -->
+    <article class="timeline-section">
+        <div class="container py-5">
+            <h2 class="text-center mb-5" data-lang="timelineTitle">Mi Trayectoria 🚀</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - Presente</div>
+                        <h3 data-lang="fullstackRole">Desarrollador Full Stack Jr</h3>
+                        <p data-lang="fullstackDesc">Desarrollo de aplicaciones web full stack utilizando Spring Boot y React. Implementación de APIs RESTful y bases de datos relacionales.</p>
+                        <div class="timeline-tech">
+                            <span><i class="fas fa-leaf"></i> Spring Boot</span>
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <span><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span><i class="fab fa-react"></i> React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3 data-lang="backendRole">Desarrollo Backend</h3>
+                        <p data-lang="backendDesc">Aprendizaje y desarrollo de aplicaciones backend con Java y Spring Boot. Creación de APIs RESTful y manejo de bases de datos.</p>
+                        <div class="timeline-tech">
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <span><i class="fas fa-leaf"></i> Spring Boot</span>
+                            <span><i class="fas fa-database"></i> SQL</span>
+                            <span><i class="fas fa-server"></i> APIs REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3 data-lang="frontendRole">Desarrollo Frontend</h3>
+                        <p data-lang="frontendDesc">Especialización en desarrollo web frontend con React y tecnologías modernas. Creación de interfaces de usuario responsivas y optimización de rendimiento.</p>
+                        <div class="timeline-tech">
+                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h3 data-lang="introRole">Introducción a la Programación</h3>
+                        <p data-lang="introDesc">Inicio en el mundo de la programación. Aprendizaje de fundamentos básicos y lógica de programación.</p>
+                        <div class="timeline-tech">
+                            <span><i class="fas fa-code"></i> Fundamentos</span>
+                            <span><i class="fas fa-brain"></i> Lógica</span>
+                            <span><i class="fas fa-terminal"></i> Algoritmos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
     <!-- !WORKS-TO-PORTFOLIO -->
 
     <article id="road-too">
         <div class="container py-3">
-            <h2 class="text-center ">Works &#x2693;</h2>
+            <h2 class="text-center" data-lang="projectsTitle">Featured Projects &#x1F4BB;</h2>
             <div class="row py-2">
-
-                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-4 mx-auto">
-                    <a href="https://davidcondoriaguilar.github.io/ReactCRUD/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg5.jpg"
-                            class="img-fluid rounded" alt="ReactCRUD" loading="lazy">
-                    </a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="work-card" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="image/reactcrud.jpg" alt="ReactCRUD" loading="lazy">
+                        <div class="work-overlay">
+                            <h3 class="work-title" data-lang="reactCRUDTitle">React CRUD</h3>
+                            <p class="work-description" data-lang="reactCRUDDesc">Tienda online desarrollada con React, consumiendo APIs para mostrar productos, carrito de compras y sistema de pagos. Interfaz moderna y responsive con diseño intuitivo.</p>
+                            <div class="work-tech">
+                                <i class="fab fa-react" data-tooltip="React"></i>
+                                <i class="fab fa-js" data-tooltip="JavaScript"></i>
+                                <i class="fab fa-css3-alt" data-tooltip="CSS"></i>
+                                <i class="fas fa-code" data-tooltip="REST API"></i>
+                            </div>
+                            <div class="work-links">
+                                <a href="https://davidcondoriaguilar.github.io/ReactCRUD/" target="_blank">
+                                    <i class="fa-solid fa-eye"></i> <span data-lang="demoLink">Demo</span>
+                                </a>
+                                <a href="https://github.com/DavidCondoriAguilar/ReactCRUD" target="_blank">
+                                    <i class="fa-brands fa-github"></i> <span data-lang="codeLink">Código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-1 mx-auto ">
-                    <a href="https://camaleon-ecologicoo.netlify.app/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg1.jpg"
-                            class="img-fluid rounded" alt="Web-Bolsas Ecológicas" loading="lazy">
-                    </a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="work-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="image/notify.jpg" alt="Establece-Notify" loading="lazy">
+                        <div class="work-overlay">
+                            <h3 class="work-title" data-lang="estableceTitle">Establece-Notify</h3>
+                            <p class="work-description" data-lang="estableceDesc">Sistema de notificaciones personalizado que integra componentes nativos de Android. Implementa WorkManager para programación de notificaciones.</p>
+                            <div class="work-tech">
+                                <i class="fab fa-android" data-tooltip="Android"></i>
+                                <i class="fas fa-bell" data-tooltip="Notifications"></i>
+                                <i class="fas fa-clock" data-tooltip="WorkManager"></i>
+                                <i class="fas fa-code-branch" data-tooltip="Git"></i>
+                            </div>
+                            <div class="work-links">
+                                <a href="https://github.com/DavidCondoriAguilar/Establece-Notify" target="_blank">
+                                    <i class="fa-brands fa-github"></i> <span data-lang="codeLink">Código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-2 mx-auto">
-                    <a href="https://artecu.netlify.app/" target="b
-                    ">
-                        <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg2.jpg"
-                            class="img-fluid rounded" alt="Web-Artesania" loading="lazy">
-                    </a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="work-card" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="image/prestamos.jpg" alt="Prestamos App" loading="lazy">
+                        <div class="work-overlay">
+                            <h3 class="work-title" data-lang="prestamosTitle">Sistema de Préstamos</h3>
+                            <p class="work-description" data-lang="prestamosDesc">API REST para gestión de préstamos con Spring Boot y PostgreSQL. Implementa patrones Builder y Stream para operaciones eficientes de datos y construcción de objetos.</p>
+                            <div class="work-tech">
+                                <i class="fab fa-java" data-tooltip="Java"></i>
+                                <i class="fas fa-database" data-tooltip="PostgreSQL"></i>
+                                <i class="fas fa-code" data-tooltip="JPA"></i>
+                                <i class="fas fa-stream" data-tooltip="Stream API"></i>
+                            </div>
+                            <div class="work-links">
+                                <a href="https://github.com/DavidCondoriAguilar/prestamos-app" target="_blank">
+                                    <i class="fa-brands fa-github"></i> <span data-lang="codeLink">Código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-xxl-4 col-md-6 mt-3 col-sm-12 work-3 mx-auto">
-                    <a href="https://kawi-barbershoop.netlify.app/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg3.jpg"
-                            class="img-fluid rounded" alt="Web-Barber" loading="lazy">
-                    </a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="work-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="image/factura.jpg" alt="Sistema de Facturación" loading="lazy">
+                        <div class="work-overlay">
+                            <h3 class="work-title" data-lang="facturacionTitle">Sistema de Facturación</h3>
+                            <p class="work-description" data-lang="facturacionDesc">Sistema de facturación desarrollado con C# y Entity Framework. Utiliza LINQ y arquitectura en capas para mejor mantenibilidad.</p>
+                            <div class="work-tech">
+                                <i class="fab fa-microsoft" data-tooltip="C#"></i>
+                                <i class="fas fa-database" data-tooltip="SQL Server"></i>
+                                <i class="fas fa-code" data-tooltip=".NET"></i>
+                                <i class="fas fa-server" data-tooltip="Backend"></i>
+                            </div>
+                            <div class="work-links">
+                                <a href="http://github.com/DavidCondoriAguilar/FacturacionCliente/tree/main" target="_blank">
+                                    <i class="fa-brands fa-github"></i> <span data-lang="codeLink">Código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-xxl-4 col-md-6 mt-3  col-sm-12 work-4 mx-auto">
-                    <a href="https://stunning-douhua-45181d.netlify.app/index.html" target="_blank">
-                        <img src="https://raw.githubusercontent.com/DavidWilld/David-dev/master/image/bg4.jpg"
-                            class="img-fluid rounded" alt="Web-Gym" loading="lazy">
-                    </a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="work-card" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="image/gymapp.jpg" alt="AppGym" loading="lazy">
+                        <div class="work-overlay">
+                            <h3 class="work-title" data-lang="appGymTitle">AppGym</h3>
+                            <p class="work-description" data-lang="appGymDesc">Aplicación Android nativa desarrollada con Kotlin y Jetpack Compose. Implementa arquitectura MVVM, Room para persistencia local, y Material Design.</p>
+                            <div class="work-tech">
+                                <i class="fab fa-android" data-tooltip="Android"></i>
+                                <i class="fas fa-code" data-tooltip="Kotlin"></i>
+                                <i class="fas fa-paint-brush" data-tooltip="Jetpack Compose"></i>
+                                <i class="fas fa-database" data-tooltip="Room"></i>
+                            </div>
+                            <div class="work-links">
+                                <a href="https://github.com/DavidCondoriAguilar/AppGym-MasterDetail" target="_blank">
+                                    <i class="fa-brands fa-github"></i> <span data-lang="codeLink">Código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="work-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <img src="image/artecu.jpg" alt="Web-Artesania" loading="lazy">
+                        <div class="work-overlay">
+                            <h3 class="work-title" data-lang="artecuTitle">Artecu</h3>
+                            <p class="work-description" data-lang="artecuDesc">Artesanías con galería interactiva, sistema de contacto y diseño que resalta la belleza de cada pieza artesanal.</p>
+                            <div class="work-tech">
+                                <i class="fab fa-js" data-tooltip="JavaScript"></i>
+                                <i class="fab fa-html5" data-tooltip="HTML"></i>
+                                <i class="fab fa-css3-alt" data-tooltip="CSS"></i>
+                                <i class="fas fa-mobile-alt" data-tooltip="Responsive Design"></i>
+                            </div>
+                            <div class="work-links">
+                                <a href="https://artecu.netlify.app/" target="_blank">
+                                    <i class="fa-solid fa-eye"></i> <span data-lang="demoLink">Demo</span>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-github"></i> <span data-lang="codeLink">Código</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                
 
+                
+
+                
             </div>
         </div>
     </article>

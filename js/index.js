@@ -16,7 +16,7 @@ function initTyped() {
     }
     
     typed = new Typed(".type", {
-        strings: ["Frontend 🚀", "Backend 🖥️", "Fullstack Jr 💡", "Web 🌐", "Móvil 📱"],
+        strings: ["Frontend", "Backend", "Fullstack Jr", "Web 🌐", "Móvil 📱"],
         typeSpeed: 90,
         backSpeed: 70,
         backDelay: 300,
@@ -198,7 +198,7 @@ const translations = {
         demoLink: "Demo",
         codeLink: "Código",
         // Profile translations
-        profileName: "David Condori Aguilar",
+        profileName: "",
         profileRole: "Desarrollador Frontend",
         profileLocation: "Lima, Perú",
         profileBio: "Apasionado por crear soluciones web innovadoras e interfaces amigables. Especializado en desarrollo frontend con tecnologías modernas.",

@@ -992,6 +992,8 @@ button[type="submit"]:hover {
 
     #homer .container {
         width: 100%;
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
     }
 
     h1 {

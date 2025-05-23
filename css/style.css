@@ -7,6 +7,16 @@
 }
 
 :root {
+    /* Spacing Scale */
+    --space-xxs: 0.25rem;   /* 4px */
+    --space-xs: 0.5rem;    /* 8px */
+    --space-sm: 1rem;      /* 16px */
+    --space-md: 1.5rem;    /* 24px */
+    --space-lg: 2rem;      /* 32px */
+    --space-xl: 3rem;      /* 48px */
+    --space-xxl: 4rem;     /* 64px */
+    --space-xxxl: 6rem;    /* 96px */
+    
     --david-color-h3: 18px;
     --david-color-menu: 20px;
 
@@ -42,6 +52,153 @@
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Base container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* Section spacing */
+section {
+    padding: var(--space-xxl) 0;
+    position: relative;
+}
+
+/* Responsive typography */
+@media (max-width: 1024px) {
+    :root {
+        --space-xl: 2.5rem;
+        --space-xxl: 3.5rem;
+    }
+    
+    section {
+        padding: var(--space-xl) 0;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --space-md: 1.25rem;
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+        --space-xxl: 2.5rem;
+    }
+    
+    section {
+        padding: var(--space-lg) 0;
+    }
+}
+
+/* Grid system */
+.grid {
+    display: grid;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+/* Card spacing */
+.card {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Button spacing */
+.button {
+    padding: var(--space-xs) var(--space-md);
+    margin: var(--space-xs) 0;
+}
+
+/* Navigation spacing */
+#nav {
+    padding: var(--space-sm) 0;
+}
+
+.nav-link {
+    margin: 0 var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+}
+
+/* Hero section */
+.hero {
+    padding: var(--space-xxl) 0;
+}
+
+/* First Section - Ajustes de altura */
+#homer {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.first-section {
+    width: 100%;
+    padding: 6rem 0 4rem 0; /* Ajuste para dar espacio para el navbar */
+    min-height: calc(100vh - 80px); /* Altura mínima menos el alto del navbar */
+    display: flex;
+    align-items: center;
+}
+
+/* Ajustes para tablet */
+@media (max-width: 1024px) {
+    .first-section {
+        padding: 5rem 0 3rem 0;
+        min-height: auto;
+    }
+}
+
+/* Ajustes para móvil */
+@media (max-width: 768px) {
+    .first-section {
+        padding: 4rem 0 2rem 0;
+        min-height: auto;
+    }
+    
+    .first-section .row {
+        margin-top: 2rem;
+    }
+    
+    .first-section h1 {
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+    
+    .first-section .type {
+        font-size: 2rem;
+        height: auto;
+        min-width: auto;
+    }
+}
+
+/* Footer */
+footer {
+    padding: var(--space-lg) 0;
+    margin-top: var(--space-xxl);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    :root {
+        --space-sm: 0.75rem;
+        --space-md: 1rem;
+        --space-lg: 1.25rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
+    .card {
+        padding: var(--space-md);
+    }
 }
 
 h1 {
@@ -100,16 +257,16 @@ h5 {
     color: #ffffff;
     font-weight: 500;
     font-size: 3.2rem;
-    display: inline-block;
-    min-width: 300px;
+    display: inline;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
     position: relative;
-    padding-right: 10px;
-    height: 4.5rem;
-    overflow: hidden;
+    margin: 0;
+    padding: 0 10px 0 0;
+    line-height: 1.2;
     font-family: 'Jura', sans-serif;
     font-style: italic;
+    white-space: nowrap;
 }
 
 .typed-cursor {
@@ -118,10 +275,13 @@ h5 {
     opacity: 1;
     animation: typedjsBlink 0.7s infinite;
     font-size: 3.2rem;
-    vertical-align: middle;
+    display: inline;
+    vertical-align: baseline;
     position: relative;
     font-family: 'Jura', sans-serif;
     font-style: italic;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes typedjsBlink {

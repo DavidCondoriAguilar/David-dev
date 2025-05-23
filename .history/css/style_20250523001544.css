@@ -2260,4 +2260,105 @@ button:hover ~ .cursor-follower {
 
 
 
+  /* Mascota que sigue al cursor */
+.pet-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    pointer-events: none;
+  }
   
+  .pet {
+    width: 60px;
+    height: 40px;
+    background: #ff6b6b;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+  }
+  
+  /* Orejas del gato */
+  .pet::before,
+  .pet::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    top: -5px;
+  }
+  
+  .pet::before {
+    left: 10px;
+    transform: rotate(-45deg);
+  }
+  
+  .pet::after {
+    right: 10px;
+    transform: rotate(45deg);
+  }
+  
+  /* Ojos */
+  .pet span {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    top: 15px;
+  }
+  
+  .pet span:first-child {
+    left: 18px;
+  }
+  
+  .pet span:last-child {
+    right: 18px;
+  }
+  
+  /* Pupilas */
+  .pet span::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #333;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    animation: look 5s infinite;
+  }
+  
+  /* Cola */
+  .pet i {
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    background: #ff6b6b;
+    border-radius: 50% 0 0 50%;
+    right: -15px;
+    bottom: 10px;
+    transform-origin: right center;
+    animation: wag 2s infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes wag {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-30deg); }
+  }
+  
+  @keyframes look {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(1px); }
+    50% { transform: translateX(-1px); }
+    75% { transform: translateX(1px); }
+  }

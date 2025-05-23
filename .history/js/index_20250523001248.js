@@ -529,8 +529,3 @@ document.addEventListener('DOMContentLoaded', () => {
     init();
     animate();
   });
-
-
-
-
-  

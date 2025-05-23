@@ -533,4 +533,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  // Mascota que sigue al cursor
+document.addEventListener('DOMContentLoaded', () => {
+    const pet = document.querySelector('.pet');
+    const container = document.querySelector('.pet-container');
+    let mouseX = 0;
+    let mouseY = 0;
+    let petX = 0;
+    let petY = 0;
+    let isHovering = false;
   
+    // Actualizar posición del ratón
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+  
+    // Efecto al hacer hover en enlaces
+    const hoverElements = document.querySelectorAll('a, button, [data-cursor="hover"]');
+    hoverElements.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        isHovering = true;
+        pet.style.transform = 'scale(1.2)';
+      });
+      el.addEventListener('mouseleave', () => {
+        isHovering = false;
+        pet.style.transform = 'scale(1)';
+      });
+    });
+  
+    // Animación suave
+    function updatePetPosition() {
+      // Calcular la posición objetivo
+      const targetX = mouseX - 30;
+      const targetY = mouseY - 30;
+      
+      // Mover suavemente
+      petX += (targetX - petX) * 0.1;
+      petY += (targetY - petY) * 0.1;
+      
+      // Aplicar posición
+      container.style.left = `${petX}px`;
+      container.style.top = `${petY}px`;
+      
+      // Girar según la dirección
+      const angle = Math.atan2(mouseY - petY, mouseX - petX) * 180 / Math.PI;
+      pet.style.transform = `rotate(${angle}deg) scale(${isHovering ? 1.2 : 1})`;
+      
+      requestAnimationFrame(updatePetPosition);
+    }
+  
+    updatePetPosition();
+    
+    // Interacción al hacer clic
+    pet.addEventListener('click', () => {
+      pet.style.animation = 'none';
+      pet.style.transform = 'scale(0.8)';
+      setTimeout(() => {
+        pet.style.animation = 'float 3s ease-in-out infinite';
+      }, 100);
+    });
+  });

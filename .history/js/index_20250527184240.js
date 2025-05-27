@@ -533,40 +533,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  // Modern Loader 2025
-  document.addEventListener('DOMContentLoaded', function() {
-      const loader = document.getElementById('modernLoader');
-      const progressFill = document.querySelector('.progress-fill');
-      const percentage = document.querySelector('.percentage');
-      
-      if (!loader) return;
-      
-      // Bloquear scroll
-      document.body.style.overflow = 'hidden';
-      
-      // Simular carga
-      let progress = 0;
-      const interval = setInterval(() => {
-          progress += Math.random() * 15;
-          if (progress > 100) progress = 100;
-          
-          // Actualizar UI
-          progressFill.style.width = `${progress}%`;
-          percentage.textContent = `${Math.floor(progress)}%`;
-          
-          // Completado
-          if (progress >= 100) {
-              clearInterval(interval);
-              
-              // Animación de salida
-              loader.style.opacity = '0';
-              loader.style.transition = 'opacity 0.8s ease';
-              
-              // Limpiar
-              setTimeout(() => {
-                  loader.remove();
-                  document.body.style.overflow = 'auto';
-              }, 800);
-          }
-      }, 200);
-  });
+  // Mostrar pantalla de carga
+document.addEventListener('DOMContentLoaded', function() {
+  // Ocultar el scroll mientras carga
+  document.body.style.overflow = 'hidden';
+  
+  // Simular carga de recursos
+  setTimeout(function() {
+      const loadingOverlay = document.querySelector('.loading-overlay');
+      if (loadingOverlay) {
+          loadingOverlay.style.opacity = '0';
+          loadingOverlay.style.visibility = 'hidden';
+          document.body.style.overflow = 'auto';
+      }
+  }, 3000); // Ajusta este valor según cuánto quieras que dure la pantalla de carga
+});

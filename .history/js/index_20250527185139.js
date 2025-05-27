@@ -533,40 +533,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  // Modern Loader 2025
-  document.addEventListener('DOMContentLoaded', function() {
-      const loader = document.getElementById('modernLoader');
-      const progressFill = document.querySelector('.progress-fill');
-      const percentage = document.querySelector('.percentage');
+  // Mostrar pantalla de carga
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtener el overlay
+  const loadingOverlay = document.getElementById('loadingOverlay');
+  
+  // Si no existe el overlay, salir
+  if (!loadingOverlay) return;
+  
+  // Ocultar el scroll mientras carga
+  document.body.style.overflow = 'hidden';
+  
+  // Mostrar el overlay
+  loadingOverlay.style.display = 'flex';
+  
+  // Simular carga de recursos
+  setTimeout(function() {
+      // Ocultar el overlay con transición
+      loadingOverlay.style.opacity = '0';
+      loadingOverlay.style.visibility = 'hidden';
       
-      if (!loader) return;
+      // Restaurar el scroll
+      document.body.style.overflow = 'auto';
       
-      // Bloquear scroll
-      document.body.style.overflow = 'hidden';
-      
-      // Simular carga
-      let progress = 0;
-      const interval = setInterval(() => {
-          progress += Math.random() * 15;
-          if (progress > 100) progress = 100;
-          
-          // Actualizar UI
-          progressFill.style.width = `${progress}%`;
-          percentage.textContent = `${Math.floor(progress)}%`;
-          
-          // Completado
-          if (progress >= 100) {
-              clearInterval(interval);
-              
-              // Animación de salida
-              loader.style.opacity = '0';
-              loader.style.transition = 'opacity 0.8s ease';
-              
-              // Limpiar
-              setTimeout(() => {
-                  loader.remove();
-                  document.body.style.overflow = 'auto';
-              }, 800);
-          }
-      }, 200);
-  });
+      // Eliminar el overlay después de la animación
+      setTimeout(() => {
+          loadingOverlay.remove();
+      }, 500);
+  }, 3000); // 3 segundos de duración
+});

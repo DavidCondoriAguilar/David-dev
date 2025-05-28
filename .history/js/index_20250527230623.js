@@ -97,7 +97,7 @@ const translations = {
       happyClients: "Happy Clients",
       // Project translations
       reactCRUDTitle: "React CRUD",
-      reactCRUDDesc: "CRUD application developed with React, implementing basic data management operations with a modern.",
+      reactCRUDDesc: "CRUD application developed with React, implementing basic data management operations with a modern and responsive interface.",
       reactCRUDTech: "React · JavaScript · CSS · REST API",
       camaleonTitle: "Camaleon Ecológico",
       camaleonDesc: "E-commerce for ecological bags with responsive design, fluid animations and user experience optimized to maximize conversions.",

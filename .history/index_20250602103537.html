@@ -53,7 +53,31 @@
     <div class="loading-overlay">
         <div class="loading-icon"></div>
     </div> -->
-
+<!-- Modern Loader 2025 -->
+<div class="modern-loader" id="modernLoader">
+    <div class="loader-content">
+        <div class="loader-grid">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell loader-logo">
+                <div class="logo-orb"></div>
+            </div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+        </div>
+        <div class="loader-text">
+            <span class="loading-text">LOADING</span>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <span class="percentage">0%</span>
+        </div>
+    </div>
+</div>
     <!-- Header-Nav -->
     <div class="back">
         <header class="nav-cont">
@@ -146,18 +170,18 @@
         <div class="second-section ">
             <div class="container info">
                 <div class="row ">
-                    <h2 style="color: #0660c0;" data-aos="zoom-out-right" data-aos-duration="1500" data-lang="aboutMeTitle"
+                    <h2 style="color: #0660c0;"  data-lang="aboutMeTitle"
                         class="py-4 text-center">Sobre Mi &#129416;</h2>
                     
                     <div id="this-sht" class=" col-xxl-7 col-md-7 col-sm-12 text-center p-1">
                         <div class="flex-1">
-                            <img data-aos="zoom-out-right" data-aos-duration="1500" class="img-circle img-fluid"
-                                alt="Image-perfil" src="image/perfilTerno.jpg">
+                            <img  class="img-circle img-fluid"
+                                alt="Image-perfil" src="image/deiv.jpg">
                             <div class="row px-2 py-3 mt-4">
-                                <h4 data-aos="zoom-out-right" data-aos-duration="1500" data-lang="profileName">David </h4>
+                                <h4 data-lang="profileName">David </h4>
                             </div>
                             <a target="_blank" href="https://www.linkedin.com/in/david-condori-aguilar/">
-                                <img data-aos="zoom-out-right" data-aos-duration="1500" loading="lazy" width="47"
+                                <img  loading="lazy" width="47"
                                     class="img-IN py-1"
                                     src="https://raw.githubusercontent.com/DavidWilld/David-dev/5cd59e5132f6ff9e44a68496151d45c0947f97c2/image/linkedin.svg"
                                     alt="Linkedin">
@@ -348,7 +372,7 @@
                         <img src="image/notify.jpg" alt="Establece-Notify" loading="lazy">
                         <div class="work-overlay">
                             <h3 class="work-title" data-lang="estableceTitle">Establece-Notify</h3>
-                            <p class="work-description" data-lang="estableceDesc">Sistema de notificaciones personalizado que integra componentes nativos de Android. Implementa WorkManager para programación de notificaciones.</p>
+                            <p class="work-description" data-lang="estableceDesc">Sistema de notificaciones personalizado que integra componentes nativos de Android. Implementa WorkManager.</p>
                             <div class="work-tech">
                                 <i class="fab fa-android" data-tooltip="Android"></i>
                                 <i class="fas fa-bell" data-tooltip="Notifications"></i>
@@ -411,7 +435,7 @@
                         <img src="image/gymapp.jpg" alt="AppGym" loading="lazy">
                         <div class="work-overlay">
                             <h3 class="work-title" data-lang="appGymTitle">AppGym</h3>
-                            <p class="work-description" data-lang="appGymDesc">Aplicación Android nativa desarrollada con Kotlin y Jetpack Compose. Implementa arquitectura MVVM, Room para persistencia local, y Material Design.</p>
+                            <p class="work-description" data-lang="appGymDesc">Aplicación Android nativa desarrollada con Kotlin y Jetpack Compose. Implementa arquitectura MVVM, Room para persistencia.</p>
                             <div class="work-tech">
                                 <i class="fab fa-android" data-tooltip="Android"></i>
                                 <i class="fas fa-code" data-tooltip="Kotlin"></i>
@@ -521,7 +545,7 @@
 
     <div class="footer">
         <div class="loader"></div>
-        <footer class="text-center d-flex justify-content-center align-items-center col-12 py-1">
+        <footer class="text-center col-12 py-1 d-flex justify-content-center align-items-center">
             Copyright © 2023 - By <strong style="color: #0660c0;"><a style="text-decoration: none;" target="_blank"
                     href="https://github.com/DavidCondoriAguilar">David Condori</a></strong>
         </footer>
@@ -544,6 +568,15 @@
         AOS.init();
     </script>
     <script src="js/nav-scroll.js"></script>
+
+    <div class="cursor"></div>
+<div class="cursor-follower"></div>
+<!-- 
+<div class="cursor-particle"></div>
+<canvas id="particle-canvas"></canvas> -->
+
+
+
 </body>
 
 </html>

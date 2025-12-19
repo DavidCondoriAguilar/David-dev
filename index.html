@@ -76,7 +76,8 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="#" data-lang="home">Home</a>
-                            <a class="nav-link" href="#about-me" data-lang="skills">Skills</a>
+                            <a class="nav-link" href="#about-me" data-lang="aboutNav">About</a>
+                            <a class="nav-link" href="#devops" data-lang="devopsNav">DevOps</a>
                             <a class="nav-link" href="#road-too" data-lang="works">Works</a>
                             <a class="nav-link" href="#contact" data-lang="contact">Contact</a>
                             <div class="form-check form-switch mx-3 mt-2">
@@ -112,6 +113,9 @@
                                         style="min-height: 3.5rem; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
                                         <span class="type"></span>
                                     </div>
+                                    <p class="hero-tagline" data-lang="heroTagline">
+                                        Desarrollo aplicaciones web end-to-end: frontend, backend, APIs y bases de datos, con despliegues automatizados.
+                                    </p>
                                 </div>
                             </div>
                             <div data-aos="zoom-in-up" data-aos-duration="2000" class="container">
@@ -138,12 +142,18 @@
 
                             </div>
 
-                            <div data-aos="zoom-in-up" data-aos-duration="2000">
-                                <a target="_blank" class="first-button"
-                                    style="text-decoration: none; display: inline-block;"
-                                    href="https://drive.google.com/drive/folders/19ewA4QhvjsmLUTyxkDDaihu-xVlc86qU?usp=sharing">
-                                    Descargar CV
-                                </a>
+                            <div class="hero-actions" data-aos="zoom-in-up" data-aos-duration="2000">
+                                <a class="hero-primary" href="#road-too" data-lang="heroCTAProjects">Ver proyectos</a>
+                                <a class="hero-secondary" href="#contact" data-lang="heroCTAContact">Contactar</a>
+                                <a target="_blank" class="hero-tertiary"
+                                    href="https://drive.google.com/drive/folders/19ewA4QhvjsmLUTyxkDDaihu-xVlc86qU?usp=sharing"
+                                    data-lang="downloadCV">Descargar CV</a>
+                            </div>
+
+                            <div class="hero-highlights" data-aos="zoom-in-up" data-aos-duration="2000">
+                                <div class="hero-highlight" data-lang="heroHighlightStack">Frontend · Backend · APIs · SQL</div>
+                                <div class="hero-highlight" data-lang="heroHighlightDevops">CI/CD · Docker · Kubernetes · Azure</div>
+                                <div class="hero-highlight" data-lang="heroHighlightLocation">Lima, Perú · Remoto</div>
                             </div>
                         </div>
                     </div>
@@ -282,7 +292,45 @@
             </div>
 
 
+        </div>
+    </article>
 
+    <article class="devops-standalone" id="devops">
+        <div class="container py-5">
+            <h2 class="section-title" data-lang="devopsTitle">DevOps / CI-CD</h2>
+            <div class="devops-wrap">
+                <p class="devops-subtitle" data-lang="devopsDesc">Automatización, contenedores y orquestación para despliegues confiables.</p>
+                <div class="devops-grid">
+                    <div class="devops-card">
+                        <div class="devops-card-icon">
+                            <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins">
+                        </div>
+                        <h6 class="devops-card-title">Jenkins</h6>
+                        <p class="devops-card-text" data-lang="devopsJenkinsDesc">Pipelines CI/CD, stages, triggers y despliegue automatizado.</p>
+                    </div>
+                    <div class="devops-card">
+                        <div class="devops-card-icon">
+                            <i class="fab fa-docker" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="devops-card-title">Docker</h6>
+                        <p class="devops-card-text" data-lang="devopsDockerDesc">Imágenes reproducibles, multi-stage builds y buenas prácticas.</p>
+                    </div>
+                    <div class="devops-card">
+                        <div class="devops-card-icon">
+                            <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes">
+                        </div>
+                        <h6 class="devops-card-title">Kubernetes</h6>
+                        <p class="devops-card-text" data-lang="devopsK8sDesc">Deployments, services, ingress, escalado y rollout/rollback.</p>
+                    </div>
+                    <div class="devops-card">
+                        <div class="devops-card-icon">
+                            <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" title="Azure">
+                        </div>
+                        <h6 class="devops-card-title">Azure</h6>
+                        <p class="devops-card-text" data-lang="devopsAzureDesc">Servicios cloud, contenedores y despliegues integrados con CI/CD.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </article>
 
@@ -335,13 +383,13 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2025 - Presente</div>
                         <h3 data-lang="currentRole">Full Stack Developer</h3>
-                        <p data-lang="currentDesc">Development of full stack web applications using Spring Boot and
-                            React. Implementation of RESTful APIs and relational databases.</p>
+                        <p data-lang="currentDesc">Development of end-to-end web applications: APIs, databases, and cloud-ready deployments with CI/CD.</p>
                         <div class="timeline-tech">
-                            <span><i class="fas fa-leaf"></i> Spring Boot</span>
-                            <span><i class="fab fa-java"></i> Java</span>
-                            <span><i class="fas fa-database"></i> PostgreSQL</span>
-                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fas fa-code"></i> APIs</span>
+                            <span><i class="fas fa-database"></i> SQL</span>
+                            <span><i class="fas fa-cogs"></i> CI/CD</span>
+                            <span><i class="fab fa-docker"></i> Docker</span>
+                            <span><i class="fas fa-cubes"></i> Kubernetes</span>
                             <span><i class="fab fa-aws"></i> AWS</span>
                             <span><i class="fab fa-microsoft"></i> Azure</span>
                         </div>
